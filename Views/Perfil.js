@@ -1,11 +1,21 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, {Component} from 'react';
+import { Text, View, image} from 'react-native';
 
-export default class Perfil extends React.Component {
+class Bielzim extends Component{
     render(){
-        return (
-            <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                <Text> Perfil! </Text>
+        return(
+            <View>
+                <Text>Para quem tem fé, a vida nunca tem fim! Não tem fim!</Text>
+            </View>
+        );
+    };
+};
+
+export default class Perfil extends Component {
+    render(){
+        return(
+            <View style={{flex: 1, alignItems:'center', justifyContent: 'center',}}>
+                <Bielzim/>
             </View>
         );
     }

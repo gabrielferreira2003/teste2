@@ -1,23 +1,22 @@
 import React, {Component} from 'react';
-import { Text, View } from 'react-native';
-import { Image } from 'react-native';
+import { Text, View} from 'react-native';
 
-class Home extends Component {
+class Oficial extends Component{
     render(){
-        return (
-                <View style={{justifyContent: 'center', alignItems: 'center'}}>
-                    <Text> Você está na {this.props.name}!</Text>
-                </View>
+        return(
+            <View style={{alignItems:'center'}}>
+                <Text>{this.props.nome} Vai chupar ou vai lamber?</Text>
+                <Text>{this.props.nome} bora da uns pega?</Text>
+            </View>
         );
     }
 }
-export default class HomeType extends Component{
-    render() {
+
+export default class Bielzim extends Component{
+    render(){
         return(
-            <View style={{alignItems: 'center', top: 50}}>
-                <Home name='Home1' />
-                <Home name='Home2' />
-                <Home name='Home3' />
+            <View style={{alignItems:'center', top: 50}}>
+                <Oficial nome='eai bb,'/>
             </View>
         );
     }
